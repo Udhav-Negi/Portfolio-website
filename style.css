@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital@1&family=Croissant+One&family=Dosis:wght@200&family=Nunito+Sans:opsz@6..12&family=Open+Sans:ital,wght@0,800;1,400&family=Roboto+Mono:wght@100&family=Satisfy&display=swap');
+
+/* Header starts here */
+body {
+    background-color: #0D1117;
+    /* background-color: #185347; */
+}
+*{
+    font-family: 'Bona Nova', serif;
+
+}
+.header, .section{
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.header{
+    display: flex;
+    background-color: #232B2B;
+    color : #fff;
+    justify-items: center;
+    border-radius: 10px;
+    transform: perspective(800px) rotateX(5deg);
+    transition: all 0.5s ease-out;
+}
+.header:hover{
+    transform: rotateX(0);
+}
+.line{
+    position: relative;
+}
+.line::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation: motion 4s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes motion{
+    from{
+        width: 0;
+        border-bottom: 3px solid white;
+    }
+    to{
+        border-bottom: 3px solid white;
+        width: 100%;
+    }
+}
+.handles a{
+    text-decoration: none;
+    margin: 6px;
+    color: rgb(71, 71, 228);
+}
+
+.info{
+    box-sizing: border-box;
+    margin-left: 3rem;
+    align-self: center;
+}
+.img{
+    width: 300px;
+    height: 300px;
+    background-image: url('./images/udhav.jpg');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-left: 25rem;
+}
+/* Section starts here */
+.section{
+    background-color: #232B2B;
+    color : #fff;
+    margin-top: 2rem;
+    border-radius: 10px;
+    /* transform: perspective(800px) rotateX(5deg); */
+}
+
+.head{
+    text-align: center;
+}
+
+.work{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    /* min-width: 100%; */
+}
+.project{
+    display: flex;
+    font-size: 20px;
+    gap: 10px;
+    /* flex-wrap: wrap; */
+}
+.project h3{
+    color: #3FB950;
+    font-weight: bolder;
+}
+.project-1{
+    /* flex-wrap: wrap; */
+}
+.project-2{
+}
+.project-3{
+}
+.left h3{
+    text-align: center;
+}
+.right{
+    align-self: center;
+}
+.img-1{
+    width: 550px;
+    height: 300px;
+    background-image: url('./images/img1.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;   
+    border-radius: 10px;
+    border: 3px solid white;
+    margin-top: 2px;
+    transform: perspective(200px) rotateY(5deg) scale(1);
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+.img-1:hover{
+    transform: perspective(800px) rotateY(0deg) scale(1.07);
+}
+.view-btn{
+    border-radius: 10px;
+    background-color: #232B2B;
+    border: 1px solid white;
+    color: #fff;
+    display: inline-block;
+    margin-top: 1.5rem;
+    margin-left: 30px;
+    text-decoration: none;
+    animation-name: sample;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes sample {
+    0%{
+        background: linear-gradient(rgba(83,115,245, 0.3));
+    }
+    25%{
+        background: linear-gradient(rgba(83,115,245, 0.3), rgba(83,115,245, 0.5));
+    }
+    50%{
+        background: linear-gradient(rgba(83,115,245, 0.3), rgba(83,115,245, 0.5), rgba(83,115,245, 0.7));
+    }
+    75%{
+        background: linear-gradient(rgba(83,115,245, 0.3), rgba(83,115,245, 0.5), rgba(83,115,245, 0.7), rgba(83,115,245, 0.9));
+    }
+    100%{
+        background: linear-gradient(rgba(83,115,245, 0.3), rgba(83,115,245, 0.5), rgba(83,115,245, 0.7), rgba(83,115,245, 0.9), rgba(83,115,245));
+    }
+}
+.view-btn:hover{
+    background-color: purple;
+}
+.view-btn i{
+    margin-right: 10px;
+}
+
+.img-2{
+    width: 550px;
+    height: 300px;
+    background-image: url('./images/img2.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;   
+    border-radius: 10px;
+    border: 3px solid white;
+    margin-top: 2px;
+    transform: perspective(200px) rotateY(-5deg) scale(1);
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+.img-2:hover{
+    transform: perspective(800px) rotateY(0deg) scale(1.07);
+}
+.img-3{
+    width: 550px;
+    height: 300px;
+    background-image: url('./images/img3.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;   
+    border-radius: 10px;
+    border: 3px solid white;
+    margin-top: 2px;
+    transform: perspective(200px) rotateY(5deg) scale(1);
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+.img-3:hover{
+    transform: perspective(800px) rotateY(0deg) scale(1.07);
+}
+.img-4{
+    width: 550px;
+    height: 300px;
+    background-image: url('./images/img4.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;   
+    border-radius: 10px;
+    border: 3px solid white;
+    margin-top: 2px;
+    transform: perspective(200px) rotateY(-5deg) scale(1);
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+.img-4:hover{
+    transform: perspective(800px) rotateY(0deg) scale(1.07);
+}
+.ds .right{
+    /* align-self: flex-start; */
+}
+
+
+/* Responsive styling */
+@media screen and (max-width : 950px){
+    .header, .section{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .info{
+        margin-left: 1rem;
+    }
+    .img{
+        width: 100vw;
+        height: 300px;
+        background-image: url('./images/udhav.jpg');
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        margin-left: -1rem;
+    }
+    .work{
+        /* border: 3px solid cyan; */
+        /* justify-content: center; */
+    }
+    .project-1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+    .project-2{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+    .project-3{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+    .project-4{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+    .img-1, .img-2, .img-3, .img-4{
+        width: auto;
+        height: 300px;
+        background-image: url('./images/img3.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;   
+        border-radius: 10px;
+        border: 3px solid white;
+        margin-top: 2px;
+        /* background-size: contain; */
+    }
+    .right ul li{
+        text-align: left;   
+    }
+}
+@media screen and (max-width : 630px)
+{
+    /* .img-1, .img-2, .img-3{
+        width: 70vw;
+    } */
+}

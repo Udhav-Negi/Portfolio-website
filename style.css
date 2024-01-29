@@ -267,7 +267,7 @@ body {
     }
     .project-4{
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
         justify-content: center;
         margin-top: 3rem;
     }

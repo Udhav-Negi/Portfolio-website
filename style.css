@@ -83,7 +83,7 @@ body {
     margin-top: 2rem;
     margin-bottom: 2rem;
     border-radius: 10px;
-    /* border: 1px solid white; */
+    border: 1px solid white;
     width: 25vw;
     text-align: center;
     transition: all 0.3s;
@@ -91,7 +91,8 @@ body {
 .about-me:hover, .skills:hover, .edu:hover{
     box-shadow: 2px 2px 2px 10px wheat;
     border: 1px solid wheat;
-    transform: scale(1.01, 1.01);
+    /* transform: scale(1.01, 1.01); */
+    transform: scale(1.1, 1.1);
 }
 .about-me{
     text-align: center;
@@ -374,5 +375,6 @@ body {
     }
     .about-me, .skills, .edu{
         width: 100%;
+        /* border: none; */
     }
 }

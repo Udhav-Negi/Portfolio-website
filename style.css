@@ -88,11 +88,18 @@ body {
     text-align: center;
     transition: all 0.3s;
 }
+.skill-names, .tools{
+    /* border: 3px solid red; */
+    margin-top: -25px;
+}
+.tools{
+    margin-bottom: 2rem;
+}
 .about-me:hover, .skills:hover, .edu:hover{
     box-shadow: 2px 2px 2px 10px wheat;
     border: 1px solid wheat;
-    /* transform: scale(1.01, 1.01); */
     transform: scale(1.1, 1.1);
+    /* transform: scale(1.01, 1.01); */
 }
 .about-me{
     text-align: center;
@@ -372,9 +379,30 @@ body {
     .details{
         flex-direction: column;
         align-items: center;
+        /* margin-top: 0; */
+    }
+    .about-me{
+        margin-top: 0;
+    }
+    .skills, .edu{
+        margin-top: 1rem;
     }
     .about-me, .skills, .edu{
-        width: 100%;
-        /* border: none; */
+        width: 80%;
+        /* box-sizing: border-box; */
+        /* display: inline-block; */
+        /* padding-top: -10px; */
+        /* transform: scale(1.01, 1.01); */
+    }
+    .about-me h2{
+        /* display: inline-block;
+        padding-top: 0; */
+        border: 2px solid red;
+    }
+    .about-me:hover, .skills:hover, .edu:hover{
+        box-shadow: 2px 2px 2px 10px wheat;
+        border: 1px solid wheat;
+        /* transform: scale(1.1, 1.1); */
+        transform: scale(1.01, 1.01);
     }
 }

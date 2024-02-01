@@ -210,33 +210,61 @@ body {
 }
 .view-btn{
     border-radius: 10px;
-    background-color: #232B2B;
+    /* background-color: #232B2B;
     border: 1px solid white;
-    color: #fff;
+    color: #fff; */
+    background-color: white;
+    color: black;
+    font-weight: bolder;
     display: inline-block;
     margin-top: 1.5rem;
     margin-left: 30px;
     text-decoration: none;
+    /* transform: perspective(200px) rotateX(50deg); */
+    transform: rotateX(50deg);
+    /* border: 3px solid red; */
+    height: 2.5rem;
     animation-name: sample;
-    animation-duration: 2s;
+    animation-duration: 5s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 @keyframes sample {
     0%{
-        background: linear-gradient(rgba(83,115,245, 0.3));
+        /* background: linear-gradient(rgba(83,115,245, 0.3)); */
+        transform: perspective(200px)  rotateX(10deg) rotateY(0deg);
+
+        /* This is original */
+        /* transform: perspective(200px) rotateX(20deg) rotateY(-30deg); */
     }
     25%{
-        background: linear-gradient(rgba(83,115,245, 0.3), rgba(83,115,245, 0.5));
+        /* background: linear-gradient(rgba(83,115,245, 0.3), rgba(83,115,245, 0.5)); */
+        transform: perspective(200px)  rotateX(10deg) rotateY(20deg);
+
+        /* This is original */
+        /* transform: perspective(200px) rotateX(20deg) rotateY(-20deg); */
     }
-    50%{
-        background: linear-gradient(rgba(83,115,245, 0.3), rgba(83,115,245, 0.5), rgba(83,115,245, 0.7));
+    50%{ 
+        /* background: linear-gradient(rgba(83,115,245, 0.3), rgba(83,115,245, 0.5), rgba(83,115,245, 0.7)); */
+        transform: perspective(200px)  rotateX(10deg) rotateY(0deg);
+
+        /* This is original */
+        /* transform: perspective(200px) rotateX(20deg) rotateY(-10deg); */
     }
     75%{
-        background: linear-gradient(rgba(83,115,245, 0.3), rgba(83,115,245, 0.5), rgba(83,115,245, 0.7), rgba(83,115,245, 0.9));
+        /* background: linear-gradient(rgba(83,115,245, 0.3), rgba(83,115,245, 0.5), rgba(83,115,245, 0.7), rgba(83,115,245, 0.9)); */
+        transform: perspective(200px)  rotateX(10deg) rotateY(-20deg);
+
+        /* This is original */
+        /* transform: perspective(200px) rotateX(20deg) rotateY(0deg); */
     }
     100%{
-        background: linear-gradient(rgba(83,115,245, 0.3), rgba(83,115,245, 0.5), rgba(83,115,245, 0.7), rgba(83,115,245, 0.9), rgba(83,115,245));
+        /* background: linear-gradient(rgba(83,115,245, 0.3), rgba(83,115,245, 0.5), rgba(83,115,245, 0.7), rgba(83,115,245, 0.9), rgba(83,115,245)); */
+        transform: perspective(200px)  rotateX(10deg) rotateY(0deg);
+
+        /* This is original */
+        /* transform: perspective(200px) rotateX(20deg) rotateY(-20deg); */
     }
 }
 .view-btn:hover{

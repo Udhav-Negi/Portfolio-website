@@ -248,8 +248,8 @@ body {
     }
 }
 .view-btn:hover{
-    /* perspective: 200px;
-    box-shadow: 2px 2px 2px 10px red; */
+    perspective: 200px;
+    box-shadow: 2px 2px 2px 10px red;
 }
 .view-btn i{
     margin-right: 10px;
@@ -486,6 +486,6 @@ body {
         transform: scale(1.07, 1.07);
     }
     .view-btn{
-        box-shadow: 2px 2px 2px 10px red;
+        box-shadow: 2px 2px 2px 7px red;
     }
 }
